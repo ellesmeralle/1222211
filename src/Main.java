@@ -1,10 +1,16 @@
+import manager.Manager;
+import tasks.Epic;
+import tasks.Subtask;
+import tasks.Task;
+
 import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) { // тесты методов и объектов
         Manager manager = new Manager();
 
-        // создать объект Task
+        // создать объект tasks.Task
         Task task1 = new Task("1. Помыть посуду", "Использовать жёлтую губку", "NEW");
         Task task2 = new Task("2. Покормить рыбок", "Найти корм", "NEW");
 
@@ -29,7 +35,7 @@ public class Main {
         }
 
 
-        // создать объект Epic
+        // создать объект tasks.Epic
         Epic epic1 = new Epic("3.Приготовить макароны по-флотски", "Спросить рецепт", "NEW");
         Epic epic2 = new Epic("4.Сходить в магазин", "Купить продукты", "NEW");
 
@@ -54,7 +60,7 @@ public class Main {
         }
 
 
-        // создать объект Subtask
+        // создать объект tasks.Subtask
         Subtask subtask1 = new Subtask("Купить макароны", "В магазине Пятёрочка", "NEW", 1);
         Subtask subtask2 = new Subtask("Купить фарш", "В магазине Магнит", "NEW", 1);
 

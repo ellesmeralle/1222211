@@ -1,3 +1,5 @@
+package tasks;
+
 import java.util.ArrayList;
 
 public class Epic extends Task {
@@ -10,13 +12,16 @@ public class Epic extends Task {
     public ArrayList<Integer> getSubtasksIds() {
         return subtasksIds;
     }
-    public void setSubtasksIds(Integer subtasksId) {
+
+    public void addSubtaskId(Integer subtasksId) {
         this.subtasksIds.add(subtasksId);
     }
+
     public void removeSubtaskById(Integer subtaskId) {
         subtasksIds.remove(subtaskId);
     }
-    public void clearAllSubtasks(){
+
+    public void clearAllSubtasks() {
         subtasksIds.clear();
     }
 }
