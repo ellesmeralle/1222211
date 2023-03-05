@@ -1,12 +1,14 @@
-package tasks;
+package model;
+
+import manager.TaskStatus;
 
 public class Task {
     protected String name;
     protected String description;
     protected int id;
-    protected String status;
+    protected TaskStatus status;
 
-    public Task(String name, String description, String status) {
+    public Task(String name, String description, TaskStatus status) {
         this.name = name;
         this.description = description;
         this.status = status;
@@ -36,11 +38,11 @@ public class Task {
         this.id = id;
     }
 
-    public String getStatus() {
+    public TaskStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(TaskStatus status) {
         this.status = status;
     }
 }
