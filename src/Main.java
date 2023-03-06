@@ -51,7 +51,7 @@ public class Main {
         System.out.println("Добавлен эпик с ID " + epicId2);
 
         // тест метода getEpicById()
-        System.out.println("Эпик по ID " + epicId + inMemoryTaskManager.getEpicById(epicId));
+        System.out.println("Эпик по ID " + epicId + " " + inMemoryTaskManager.getEpicById(epicId));
 
         // тест метода updateEpic()
         Epic updatedEpic1 = new Epic("Макароны в процессе готовки", "Кипит вода", TaskStatus.IN_PROGRESS);
